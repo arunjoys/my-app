@@ -3,7 +3,7 @@
      git 'https://github.com/arunjoys/my-app.git'
    }
    stage('Compile-Package'){
-     sh label: '', script: 'mvn clean package' 
+          sh /var/lib/mvn package
    }
    stage('Slack Notification'){
        slackSend baseUrl: 'https://hooks.slack.com/services/',
