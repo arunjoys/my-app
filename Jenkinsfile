@@ -1,6 +1,6 @@
   node{
    stage('SCM Checkout'){
-     git 'https://github.com/javahometech/my-app'
+     git 'https://github.com/arunjoys/my-app.git'
    }
    stage('Compile-Package'){
      sh label: '', script: 'mvn clean package' 
